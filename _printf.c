@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 /**
  * _printf - produces output according to a format
@@ -9,6 +7,7 @@
  * determine which printing function to call depending on the conversion
  * specifiers contained into fmt
  * Return: length of the formatted output string
+ * Authors: Ehoneah Obed & Abdulhakeem Badejo
  */
 int _printf(const char *format, ...)
 {
@@ -46,5 +45,5 @@ int _printf(const char *format, ...)
 	_putchar(-1);
 	va_end(arguments);
 	return (count);
-
 }
+
